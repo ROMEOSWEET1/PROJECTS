@@ -39,7 +39,7 @@ a {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
+	background-color: rgba(185, 21, 21, 0.24);
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -54,7 +54,7 @@ a {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: rgb(145, 15, 15);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -86,7 +86,7 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(184, 22, 57, 0.021);
+	color: rgba(236, 221, 11, 0.068);
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
@@ -98,7 +98,7 @@ a {
 }
 #header .nav-list ul li:hover a {
 	color: crimson;
-    border-bottom: 3PX solid brown;
+    border-bottom: 3PX solid rgb(108, 165, 42);
 	background-color: 13px solid crimson;
 	
 }

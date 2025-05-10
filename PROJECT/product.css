@@ -54,7 +54,7 @@ a {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: rgba(102, 16, 49, 0.452);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -86,7 +86,7 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.021);
+	color: rgba(6, 122, 21, 0.116);
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
