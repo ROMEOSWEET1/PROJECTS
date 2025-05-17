@@ -8,12 +8,31 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  z-index: 1;
-  background-color: black;
+  background-color:black;
   color: white;
   position: relative;
 }
+/* container start */
+a {
+  text-decoration: none;
+}
 
+ /* .container {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}   */
+.brand h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+.brand h1 span {
+  color: crimson;
+}
+/* container end */
 /* Header section */
 #header {
   position: fixed;
@@ -146,27 +165,7 @@ html {
   top: 0;
 }
 /* End Header section */
-/* container start */
-a {
-  text-decoration: none;
-}
 
-.container {
-  min-height: 10vh;
-  width: 100%;
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-}
-.brand h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: white;
-}
-.brand h1 span {
-  color: crimson;
-}
-/* container end */
 
 /* Keyframes */
 /* @keyframes hamburger_puls {
@@ -208,91 +207,255 @@ a {
 
 /* product start */
 
-.container{
-  min-height: 100vh;
-  justify-content: center;
-  /* align-items: center; */
-}
-#market{
-  display: flex;
-  background-size: cover;
-  background-image: linear-gradient(rgba(228, 226, 236, 0.158),rgba(206, 66, 27, 0.76)),url(bg\ img.jpg);
-}
 
-
-.brand-1{
-margin: 7rem 0;
-  font-size: 1.5rem;
-  color: black;
-margin-bottom: 60px;  
-  font-weight:400 ;
-  /* margin: 60px 0; */
-text-transform: uppercase;
-}
-.gate_way{
+.market{
+  margin: 7rem 0;
   display: flex;
-  border: 2px solid white;
-  background-color: antiquewhite;
-  width: 40%;
-  height: 5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1rem;
-}
-.jet{
-  
-  border-radius: .5rem;
-  height: 2.5rem;
-text-align: center;
-  text-transform: uppercase;
-margin: 0 6px;
-width: fit-content;
-}
-.bracely p{
+  text-align: center;
   font-size: 2rem;
-  font-weight: bolder;
-  margin-top: 5rem ;
   text-transform: uppercase;
-}
-.dialog{
-  border-radius: 2rem;
-  margin: 1.5rem 0;
-  display: flex;
-  margin-left: 12rem;
-  background-color: white;
-  height: 4rem;
-  width: 40%;
+  font-weight: 100;
   align-items: center;
   justify-content: center;
 }
-.use h2{
-  font-size:1.5rem;
-  font-weight: bolder;
-  color:black ;
-}
-/* //product  */
-
-/* footer start */
-#footer{
-  margin:2rem 0;
-  color:rgba(111, 63, 223, 0.856);
-  background-color: black;
-}
-.container{
-  min-height: 2vh;
+.marketer{
+  background-image: linear-gradient(
+    rgba(240, 43, 21, 0.288),
+    rgba(89, 10, 105, 0.664)),
+  url(bg\ img.jpg); 
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;}
+.row{
+  flex-wrap: wrap;
   display: flex;
 }
-.footer_footsy{
+.first{
+  flex-wrap: wrap;
+  margin-bottom: 2rem ;
+  justify-content: center;
+  align-items: center;
+}
+.our_grains{
+  flex-wrap: wrap;
+  
+  margin-right: 1rem;
+}
+.FIRST_GRAIN{
+  padding: 08px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:4rem;
+  border-radius: .5rem; 
+  align-items:center ;
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+max-width: 300px;
+}
+
+.FIRST_GRAIN:hover{
+transform: scale(1.1);
+transition: 2s ease;
+}
+.FIRST_GRAIN h2 {
+  text-transform:capitalize;
+  font-weight: 100;
+  font-size: 2rem;display: flex;
+  justify-content: center;
+  
+
+}
+.FIRST_GRAIN_A {
+  width: 18rem;
+  
+}.FIRST_GRAIN_B {
+  width: 22rem;
+}
+.FIRST_GRAIN_C {
+  width: 29rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finding{ 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin:  8rem 0;
+  text-transform: uppercase;
+  align-items: center;
+}
+ .finding_product h1{
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  color: black;
+  text-align: center;
+  align-items: center;
+  border-radius: .7rem;
+  justify-content: center;
+  background-color:white;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 4rem;
+  margin-left: 7rem;
+  text-transform: uppercase;
+} 
+
+.line{
+  display: flex;
+  justify-content: center;
+color: white;
+ width: 80%;
+ margin-left:12rem; 
+margin-bottom: 5rem;
+border: .3rem solid white;
+}
+/* footer start */
+#section{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin:2rem 0;
+}
+
+.row{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  min-height: 10vh;
+ 
+}
+.section_footsy{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
   font-size:1.5rem;
   font-weight: 200;
 }
-.footer_footsy p a{
-  color: white;
+
+.learn_more a{
+  text-align: center;
+margin-left: .5rem;
 }
-.clicK_me{
-  /* margin-top: .5rem; */
-  background-color: rgb(6, 1, 145);
-width: 3rem;
-/* margin-left: 3rem; */
+button{
+  text-align: center;
+  width: 03.5rem;
+  color: white;
+  margin-right: 1rem;
+  background-color: rgba(0, 0, 255, 0.363);
 }
 /* //footer end */
+@media(max-width:965PX) {
+  .market{
+    font-size: 1.5rem;
+  }
+.FIRST_GRAIN h2 {
+  text-transform:uppercase;
+  font-weight: 100;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+  
+.FIRST_GRAIN_A {
+  width: 10rem; 
+}
+.FIRST_GRAIN_B {
+  width: 11rem;
+}
+.FIRST_GRAIN_C {
+  width: 18rem;
+}
+
+.line{
+display: flex;
+  justify-content: center;
+color: white;
+ width: 75%;
+ margin-left:08rem; 
+margin-bottom: 5rem;
+border: .3rem solid white;
+}
+.section_footsy{ 
+  font-size:1rem;
+  font-weight: 200;
+}
+}
+
+
+
+@media(max-width:570PX) {
+  .market{
+    font-size: 1.5rem;
+  }
+  
+.FIRST_GRAIN h2 {
+  text-transform:uppercase;
+  font-weight: 100;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+  
+.FIRST_GRAIN_A {
+  width: 04rem; 
+}
+.FIRST_GRAIN_B {
+  width:09rem;
+}
+.FIRST_GRAIN_C {
+  align-items: center;
+  width: fit-content;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.line{
+  justify-content: center;
+  display: flex;
+color: white;
+ width: 70%;
+ margin-left:06rem; 
+margin-bottom: 5rem;
+border: .3rem solid white;
+}
+.section_footsy{ 
+  font-size:1rem;
+  font-weight: 200;
+}
+
+.market{
+  margin: 7rem 0;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 100;
+   align-items: center;
+  justify-content: center;
+  } 
+
+  .finding_product h1{
+    font-size: 1rem;
+    width: 15rem;
+    justify-content: center;
+    display: flex;
+  
+  }
+
+.section_footsy{
+font-size: 1rem;
+}
+button{
+  font-size: 1rem;
+  width: 02.5rem;
+}
+}
