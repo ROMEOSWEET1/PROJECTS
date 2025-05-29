@@ -335,11 +335,11 @@ border: .3rem solid white;
 .rice_class h3{
   color:greenyellow;
   padding-left: 4.3rem;
+  margin-right:1rem;
   
 }
 .CLACK h3{
   margin-top:1rem;
-  margin-left:  0rem;
   margin-bottom: 1.5rem;
 }
    /* GRAINS SECTION  end */
@@ -385,6 +385,107 @@ button{
   background-color: rgba(0, 0, 255, 0.363);
 }
 /* //footer end */
+
+/* nuts */
+.NUTS{
+  max-width: 800px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.NUTS::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.Nuts{
+  background-color: white;
+  border-radius: 50%;
+  margin: 3rem;
+  padding: 3rem;
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+}
+.Nuts img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.Nuts h3{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+/* .Nuts::after{
+content: '';
+border-radius: 50%;
+background-color: white;
+position: absolute;
+
+
+/* //nuts */
+ 
+/* //GREEN COFFEE */
+
+.COFFEE{
+  background-color: white;
+  border-radius: 50%;
+  margin: 3rem;
+
+  padding: 3rem;
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+}
+.COFFEE img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.COFFEE h3{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+/* GREEN COFFEE\\\*/
+
+/* //OIL SECTION */
+.OILY{
+  background-color: white;
+  border-radius: 50%;
+  margin: 3rem;
+  padding: 3rem;
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+}
+.OILY img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.OILY h3{
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+/* OIL SECTION ///*/
+
 @media(max-width:965PX) {
   .market{
     font-size: 1.5rem;
@@ -409,10 +510,8 @@ button{
 
 .line{
 display: flex;
-  /* justify-content: center; */
 color: white;
  width:fit-content;
- /* margin-left:08rem;  */
 margin-bottom: 1rem;
 border: .3rem solid white;
 }
@@ -421,10 +520,6 @@ border: .3rem solid white;
   font-weight: 200;
 }
 /* grain section */
-.CLACK{
-margin-bottom: 2rem;
-  font-size: 1rem;
-}
 }
 
 

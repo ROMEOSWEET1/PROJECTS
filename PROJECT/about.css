@@ -31,7 +31,9 @@ a {
 	width: 100vw;
 	height: auto;
 }
-
+.container{
+	;
+}
 #header .header {
 	min-height: 10vh;
 	background-color: rgba(185, 21, 21, 0.24);
@@ -193,3 +195,9 @@ a {
 
 	/* End header */
 
+.marketer{
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+background-image: url(F2.jpg);
+}

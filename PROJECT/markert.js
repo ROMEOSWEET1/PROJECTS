@@ -23,4 +23,4 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
-const name = prompt('What is your name?');
+// const name = prompt('What is your name?');
