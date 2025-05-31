@@ -8,23 +8,23 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  z-index: 1;
+  /* z-index: 1; */
   background-color: #033f47;
   color: white;
-  position: relative;
+  /* position: relative; */
 }
 /* container start */
 a {
   text-decoration: none;
 }
 
-.container {
+/* .container {
   min-height: 10vh;
   width: 100%;
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .brand h1 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -83,7 +83,6 @@ a {
   letter-spacing: 0.2rem;
   text-decoration: none;
   color: white;
-
   text-transform: uppercase;
   padding: 20px;
   display: block;
@@ -142,7 +141,7 @@ a {
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 100%;
@@ -206,23 +205,23 @@ a {
 
 /* search-bar */
 
-#search-bar {
-  /* background-image: url(F2.jpg); */
-  margin-top: 2rem;
+.search-bar {
+  margin-top: 0;
   display: flex;
   justify-content: center;
-  min-height: 10vh;
+  min-height: 05vh;
   justify-content: center;
   align-items: center;
+  
 }
 
 .form-control {
+
   height: 6rem;
   justify-content: center;
   border-color: saddlebrown;
   width: 20rem;
-  text-align: center;
-  background-color: transparent;
+  /* background-color: #033f47; */
   align-items: center;
   justify-content: space-between;
 }
@@ -230,14 +229,15 @@ a {
 .form-control:hover {
   color: transparent;
   transition: 0.5s ease;
-  background-color: rgba(221, 251, 152, 0);
+  background-color: rgba(221, 251, 152, 0.384);
 }
 
 .btn {
   height: 6rem;
 
   border-color: saddlebrown;
-  background-color: transparent;
+  /* background-color: #033f47; */
+
   width: 5rem;
 }
 .btn:hover {
@@ -259,55 +259,116 @@ a {
 /* //Media Query For Tablet */
 
 /* grain-bar  */
-.container{
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-   /* display: flex; */
-}
-#pro-service {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(  rgba(240, 43, 21, 0.405),rgba(23, 443, 33, 0.3) ),url(bg\ img.jpg); 
-  background-size: cover;
-}
 
-.cool-class {
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: linear-gradient(  rgba(240, 43, 21, 0.405),rgba(23, 443, 33, 0.3) ),url(bg\ img.jpg); 
+  min-height: 100vh;
+}
+/* .cool-class {
   position: relative;
   width: 100%;
   margin-top: 4rem;
   margin: 37px 62px;
   height: 100%;
   padding: 5px;
-  
+} */
+ .grid{
+  align-items: center;
+  flex-wrap: wrap;
+}
+ 
+.card{
+  padding-left:5rem;
+  justify-content: space-between;
+  color: inherit;
 }
 
+.cab h1{
+  display: flex;
+  margin-top: 4rem;
+}
+/* .cab{
+  
+} */
+.container-case{
+  display: flex; 
+  flex-direction:column;
+  background-color:crimson
+   ;
+  min-height: 90vh;
+  margin-top: 3rem;
+  align-items: center;
+  border-radius:3rem ;
+  text-align: center;
+}
+
+.cake{
+  display: flex;
+}
+.buying{
+  
+   background-color: white;
+  border-radius: 50%;
+  margin-top: 3rem;
+  margin:4rem 4rem ;
+  padding: 3rem;
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+}
+.buying p{
+  display: flex;font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top:3rem;
+  flex-wrap: wrap;
+}
+.buying img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.find-product{
+  margin-top: 5rem;
+}
+.find-product h2{
+  padding-bottom: 2rem;
+  font-weight: bold;
+  color: black;
+}
+.find-product input{
+  text-align: center;
+  height: 4rem;
+}
+
+.find-product input:hover{
+  transition: 0.5s ease-out;
+  color:#99FF00;
+  background-color: #660000;
+}
+.select {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin:0 06rem;
+  
+}
+.select h3{
+  padding-top: 6rem;
+}
 .select h1 {
   font-size: 3rem;
-  margin-bottom: 0;
-  margin-left: 2rem;
   text-transform: uppercase;
+  margin-top: 3rem;
 }
 .select p {
   margin-top: 0;
   font-size: 2rem;
-  margin-left: 2rem;
-}
-.select h3 {
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin: 4rem 2rem;
-}
-.row {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
-.row::after{
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .butt{
@@ -376,7 +437,7 @@ width: 100%;
     height: 3rem;
 }
 
-.card{
+/* .card{
   min-height: 100vh;
   margin-top: 0;
   padding: 5rem;
@@ -387,7 +448,7 @@ width: 100%;
   max-width: 30%;
   box-sizing: border-box;
   background-color: rgba(20, 220, 33, 0.687);
-}
+} */
 .card_1{
    padding-left: 2rem ;
   padding-right: 2rem;

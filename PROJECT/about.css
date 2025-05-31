@@ -13,7 +13,7 @@ a {
 	text-decoration: none;
 }
 
-
+/*  */
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -31,9 +31,9 @@ a {
 	width: 100vw;
 	height: auto;
 }
-.container{
-	;
-}
+/* .container{
+	
+} */
 #header .header {
 	min-height: 10vh;
 	background-color: rgba(185, 21, 21, 0.24);
