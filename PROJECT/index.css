@@ -259,7 +259,6 @@ a {
 /* //Media Query For Tablet */
 
 /* grain-bar  */
-
 #main {
   display: flex;
   align-items: center;
@@ -268,14 +267,7 @@ a {
   background-image: linear-gradient(  rgba(240, 43, 21, 0.405),rgba(23, 443, 33, 0.3) ),url(bg\ img.jpg); 
   min-height: 100vh;
 }
-/* .cool-class {
-  position: relative;
-  width: 100%;
-  margin-top: 4rem;
-  margin: 37px 62px;
-  height: 100%;
-  padding: 5px;
-} */
+
  .grid{
   align-items: center;
   flex-wrap: wrap;
@@ -291,16 +283,39 @@ a {
   display: flex;
   margin-top: 4rem;
 }
-/* .cab{
-  
-} */
+
+
+.select {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.select h3{
+  padding-top: 6rem;
+}
+
+.select h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+ 
+
+.select p {
+  margin-top: 0;
+  font-size: 2rem;
+} 
+
+/* \\\\\\\\\\\\GRAIN SECTION START//////////////// */
+
 .container-case{
   display: flex; 
   flex-direction:column;
-  background-color:crimson
-   ;
-  min-height: 90vh;
+  background-color:crimson;
+  min-height: 100vh;
+  max-width: 80vh;
   margin-top: 3rem;
+  margin-left: 7rem;
   align-items: center;
   border-radius:3rem ;
   text-align: center;
@@ -310,8 +325,7 @@ a {
   display: flex;
 }
 .buying{
-  
-   background-color: white;
+  background-color: white;
   border-radius: 50%;
   margin-top: 3rem;
   margin:4rem 4rem ;
@@ -323,6 +337,8 @@ a {
 .buying p{
   display: flex;font-size: 1.5rem;
   display: flex;
+  color: black;
+  font-weight: bolder;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -334,6 +350,32 @@ a {
   height: 4rem;
 }
 
+.buy{
+  flex-direction: column;
+  display: flex;
+}
+.buying_2{
+   background-color: white;
+  border-radius: 50%;
+  margin-top: 3rem;
+  margin:2rem 4rem ;
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+}
+.buying_2 img{
+   width: 4rem;
+  height: 4rem; 
+}
+.buy d{
+   font-size: 1.5rem;
+  color: black;
+  font-weight: bolder;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
 .find-product{
   margin-top: 5rem;
 }
@@ -348,58 +390,41 @@ a {
 }
 
 .find-product input:hover{
-  transition: 0.5s ease-out;
+    transition: 2s ease-in-out;
+    transform: scale(1.1);
   color:#99FF00;
+  border:1px solid pink;
   background-color: #660000;
 }
-.select {
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin:0 06rem;
-  
-}
-.select h3{
-  padding-top: 6rem;
-}
-.select h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-top: 3rem;
-}
-.select p {
-  margin-top: 0;
-  font-size: 2rem;
-}
+/* \\\\\\\\\\\\GRAIN SECTION END//////////////// */
 
-.butt{
-  margin-left: 2rem;
-  margin-top:4rem;
-width: 100%;
-}
-.cta{
-
-  display:block;
-  border:5px solid crimson;
-  width: fit-content;
-  font-size:2.5rem;
-  border-radius:1rem;
+ /*\\\\\\\\\\\ ICON SECTION START ////////// */
+ .main_section{
+  margin-top: 8rem;
+  gap: 8rem;
+  display: flex;
+  margin-bottom: 4rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+  .main_button input{
+  height: 4rem;
   text-align: center;
-  font-weight: bolder;
-  color: #000;
+  }
+  .main_button input:hover{
+    transition: 2s ease-in-out;
+    transform: scale(1.1);
+  color:#99FF00;
+  border:1px solid pink;
+  background-color: #660000;
 }
- .cta:hover {
-  transform: scale(1.2);
-  color: #fff;
-  background-color:transparent;
-  transition: 0.5s ease;
- 
-}
+  
  .fab-color {
   align-items:center;
-  margin-left: 2rem;
-  margin-top: 4rem;
- display: flex;
- font-size:1.8rem;
+  display: flex;
+  gap: 2rem;
+ font-size:2rem;
 }
 .fab{
   border-radius: 50%; 
@@ -413,84 +438,62 @@ width: 100%;
    transition: 0.5s ease-in-out;
   color: #cbdf16;
 }
-/* .container.cup{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+ /*\\\\\\\\\\\ ICON SECTION END ////////// */
+
+
+/* Media Queries */
+
+
+/* Mobile */
+@media only screen and (max-width: 368px){
+  /* Mobile styles */
+  .grid { flex-direction: column; }
+  .card { padding-left: 1rem;font-size:1.5rem ;display: flex; justify-content: center;}
+  .container-case { margin-left: 3.5rem; max-width: 90vh;display: flex;text-align: center;
+  justify-content: center;margin-right: 3.5rem;}
+  .main_section { gap: 4rem; }
+  .fab { padding: 0.5rem; font-size: 1.5rem;}
+}
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  /* Tablet styles */
+   .grid { gap: 2rem;}
+  .card { padding-left: 1rem;font-size: 1rem; }
+  .container-case { margin-left: 2rem;margin-right: 2rem; max-width: 90vh;}
+  .main_section { gap: 6rem; }
+  .fab { padding: 0.8rem; font-size: 1.8rem;}
+
+}  
+/* mobile */
+@media only screen and (min-width: 175px) and (max-width: 375px) { 
+  .grid { gap: 2rem;}
+  .card { padding-left: 1rem;font-size: 1rem; text-align: center;}
+  .select{font-size: 1rem;text-align: center;}
+  .select h1{font-size: 1.5rem; text-align: center;}
+  .select p{font-size:1.3rem ;text-align:center ;}
+  .container-case { margin-left: 3rem; max-width: 65vh;display: flexbox;margin-right: 3rem;}
+  .main_section { gap: 3rem; }
+  .fab { padding: 0.4rem; font-size: 1.rem;}
+ .buying img{width: 2rem;height: 2rem;}
+ .buying{width: 4.5rem;height: 4.5rem; margin-top: 3rem; padding: 1rem;  margin-top: 1rem;margin: 2rem 2rem;}
+.cake{flex-direction: column;}
+ .buying_2{width:4.5rem;height: 4.5rem; margin-top:3rem;padding:1rem;}
+ .buying_2 img{height: 2rem;width: 2rem;}
+}
  
-} */
-.style{
-  background-color:white; 
-  width: 06rem;
-  border-radius:50%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-   height: 6rem;
-}
 
-.style img{
-   margin: 1.4rem; 
-   width: 3rem;
-   border-radius: 50%;
-    height: 3rem;
-}
-
-/* .card{
-  min-height: 100vh;
-  margin-top: 0;
-  padding: 5rem;
-  margin-left: 15rem;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 30%;
-  box-sizing: border-box;
-  background-color: rgba(20, 220, 33, 0.687);
-} */
-.card_1{
-   padding-left: 2rem ;
-  padding-right: 2rem;
-  margin-top:18rem;
-}
-.card_1 h2{
-  font-size: 1.2rem;
-  margin: 20px ;
-}
-@media(min-width:766px) {
-
-  .butt{
-  margin: 1.3%;
-   margin-left: 2rem;
-  margin-top:4rem;
-  }
-.cta{
-  width: 13rem;
-  font-size: 1.5rem;
-  border:1rem solid wheat;
-
-}
-
-.fab-color{
-  margin-left: 2rem;
-  margin-top: 3rem;
-  display: flex;
-   align-items:center;
-}
-.fab{
-  padding:2rem;
-  .fab{
-  border-radius: 50%; 
-  box-shadow: 4px 4px 0px  black;
-
-}
-
-}
-.fab:hover{
-  transform: scale(1.5);
-   background-color:hwb(245 0% 0%) ;
-   transition: 0.5s ease-in-out;
-  color: #cbdf16;
-}
+@media only screen and (min-width: 382px) and (max-width: 658px) { 
+    .grid { gap: 1rem;}
+  .card { padding-left: 1rem;font-size: 1rem; }
+  .container-case { margin-left: 2rem;margin-right: 2rem; max-width: 70vh; }
+  .main_section { gap: 2rem; }
+  .fab { padding: 0.8rem; font-size: 1.8rem;}
+ .buying{width: 4.5rem;height: 4.5rem; margin-top: 3rem; padding: 1rem;  margin-top: 1rem;margin: 2rem 2rem;}
+ .buying img{width: 2rem;height: 2rem;}
+ .buying_2{width:4.5rem;height: 4.5rem; margin-top:3rem;padding:1rem;}
+ .buying_2 img{height: 2rem;width: 2rem;}
+ .card { padding-left: 1rem;font-size: 1rem; text-align: center;}
+  .select{font-size: 1rem;text-align: center;}
+  .select h1{font-size: 1.5rem; text-align: center;}
+  .select p{font-size:1.3rem ;}
 }
