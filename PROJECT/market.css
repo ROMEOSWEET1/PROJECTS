@@ -8,7 +8,7 @@ html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  background-color:black;
+  background-color:#222b01;;
   color: white;
   position: relative;
 }
@@ -17,13 +17,7 @@ a {
   text-decoration: none;
 }
 
- /* .container {
-  min-height: 10vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-}   */
+
 .brand h1 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -168,7 +162,7 @@ a {
 
 
 /* Keyframes */
-/* @keyframes hamburger_puls {
+@keyframes hamburger_puls {
 	0% {
 		opacity: 1;
 		transform: scale(1);
@@ -177,7 +171,7 @@ a {
 		opacity: 0;
 		transform: scale(1.4);
 	}
-} */
+}
 /* Keyframes End */
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
@@ -345,45 +339,12 @@ border: .3rem solid white;
    /* GRAINS SECTION  end */
 
 
-/* footer start */
-#section{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin:2rem 0;
-}
 
 .row{
-  display:flex;
-  align-items: center;
   justify-content: center;
-}
-.container{
-  display: flex;
-  min-height: 10vh;
- 
-}
-.section_footsy{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  font-size:1.5rem;
-  font-weight: 200;
 }
 
-.learn_more a{
-  text-align: center;
-margin-left: .5rem;
-}
-button{
-  text-align: center;
-  width: 03.5rem;
-  color: white;
-  margin-right: 1rem;
-  background-color: rgba(0, 0, 255, 0.363);
-}
+
 /* //footer end */
 
 /* nuts */
@@ -423,12 +384,6 @@ button{
   margin-top: 3rem;
   flex-wrap: wrap;
 }
-/* .Nuts::after{
-content: '';
-border-radius: 50%;
-background-color: white;
-position: absolute;
-
 
 /* //nuts */
  
@@ -514,14 +469,9 @@ color: white;
 margin-bottom: 1rem;
 border: .3rem solid white;
 }
-.section_footsy{ 
-  font-size:1rem;
-  font-weight: 200;
-}
+
 /* grain section */
 }
-
-
 
 @media(max-width:570PX) {
   .market{
@@ -591,3 +541,55 @@ button{
 /* grain section */
 
 }
+
+/* footer section start */
+.footer.container{
+ min-height: 50v;
+ display: flex;
+justify-content:center;
+}
+.list{
+  padding:9rem;
+  /* justify-content: space-between; */
+  text-align: center;
+}
+.list h3{
+  font-size: 2rem;
+  color: rgb(17, 2, 2);
+  font-weight: bolder;
+}
+
+.list ul li{
+  list-style: none;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.list ul li :hover{
+  transform:translateX(10px)
+}
+.social_icons li img{
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  gap: 3rem;
+}
+
+@media only screen and (max-width:1124px) {
+  .list{padding:3.5rem;}
+}
+@media only  screen and (max-width:646px){
+  .list{
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 515px){
+  .footer{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .social_icons{display: flex;flex-direction: column-reverse;}
+}
+/* footer section end */

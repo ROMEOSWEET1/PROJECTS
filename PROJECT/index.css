@@ -269,7 +269,6 @@ a {
   display: flex; 
   flex-direction:column;
   background-color:crimson;
-  min-height: 100vh;
   max-width: 80vh;
   margin-top: 3rem;
   margin-left: 7rem;
@@ -344,6 +343,7 @@ a {
 .find-product input{
   text-align: center;
   height: 4rem;
+  margin-bottom: 3rem;
 }
 
 .find-product input:hover{
@@ -398,22 +398,63 @@ a {
  /*\\\\\\\\\\\ ICON SECTION END ////////// */
 
 
- /* footer section start */
-.footer.container{ min-height: 50vh;margin-left: 9rem;margin-right: 9rem;display: inline; justify-content: center;align-items: center;}
+/* footer section start */
+.footer.container{
+ min-height: 50v;
+ display: flex;
+justify-content:center;
+}
 .list{
-  justify-content: space-between;
+  padding:9rem;
+  /* justify-content: space-between; */
+  text-align: center;
+}
+.list h3{
+  font-size: 2rem;
+  color: black;
+  font-weight: bolder;
 }
 
+.list ul li{
+  list-style: none;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  font-weight: bold;
+  color: white;
+}
 
- /* footer section end */
+.list ul li :hover{
+  transform:translateX(10px)
+}
+.social_icons li img{
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  gap: 3rem;
+}
+
+@media only screen and (max-width:1124px) {
+  .list{padding:3.5rem;}
+}
+@media only  screen and (max-width:646px){
+  .list{
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 515px){
+  .footer{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .social_icons{display: flex;flex-direction: column-reverse;}
+}
+/* footer section end */
 
 
 /* Media Queries */
-
-
 /* Mobile */
 @media only screen and (min-width:671px) {
-   /* \\\\\\\\\search-bar START/////////// */
+  /* \\\\\\\\\search-bar START/////////// */
   .form-control { width:50rem;height:6rem;}
   /* \\\\\\\\\search-bar END/////////// */
 }
@@ -430,7 +471,8 @@ a {
   justify-content: center;margin-right: 3.5rem;}
   .main_section { gap: 4rem; }
   .fab { padding: 0.5rem; font-size: 1.5rem;}
-}
+
+  }
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1243px) { 
   /* Tablet styles */
@@ -443,12 +485,21 @@ a {
   .main_section { gap: 6rem; }
   .fab { padding: 0.8rem; font-size: 1.8rem;}
  
+
+ 
 }  
+/* @media only screen and (max-width: 735px){ 
+.list{
+  padding: 1rem; 
+}
+} */
+
 /* mobile */
 @media only screen and (min-width: 175px) and (max-width: 378px) { 
   /* \\\\\\\\\search-bar START/////////// */
   .form-control { width:15rem;  height:6rem;}
   /* \\\\\\\\\search-bar END/////////// */
+  
   .grid { gap: 2rem;}
   .card { padding-left: 1rem;font-size: 1rem; text-align: center;}
   .select{font-size: 1rem;text-align: center;}
@@ -459,12 +510,12 @@ a {
   .fab { padding: 0.4rem; font-size: 1.rem;}
  .buying img{width: 2rem;height: 2rem;}
  .buying{width: 4.5rem;height: 4.5rem; margin-top: 3rem; padding: 1rem;  margin-top: 1rem;margin: 2rem 2rem;}
-.cake{flex-direction: column;}
+ .cake{flex-direction: column;}
  .buying_2{width:4.5rem;height: 4.5rem; margin-top:3rem;padding:1rem;}
  .buying_2 img{height: 2rem;width: 2rem;}
-}
- 
 
+ 
+}
 @media only screen and (min-width: 382px) and (max-width: 658px) { 
   /* \\\\\\\\\search-bar START/////////// */
  .form-control { width:30rem;  height:6rem;}
@@ -482,4 +533,8 @@ a {
   .select{font-size: 1rem;text-align: center;}
   .select h1{font-size: 1.5rem; text-align: center;}
   .select p{font-size:1.3rem ;}
+
+ 
 }
+
+
